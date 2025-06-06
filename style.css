@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: 'Quicksand';
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-top: 40px;
+}
+
+.nuvem {
+    width: 120px; 
+    height: auto;
+    border-radius: 10px; 
+}
+    
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(9, 30, 70);
+    padding: 20px;
+    background-color: rgba(231, 111, 185, 0.685); 
+    border-radius: 10px;
+    border: 2px solid rgb(43, 158, 133); 
+    box-shadow: 0 0 50px rgba(11, 51, 83, 0.342); 
+    margin-top: 105px;
+}
+
+.clouds {
+    background: url('nuvem2.png') repeat-x;
+    background-color: #89E5FF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%; 
+    height: 100vh;
+    animation: movebackground 30s linear infinite;
+    z-index: -1;
+    background-size: auto 100%; 
+}
+@keyframes movebackground {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } 
+}
+
+.weather-info {
+    margin-top: 20px;max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(245, 245, 245);
+    padding: 20px;
+    background-color: rgba(26, 20, 116, 0.685); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.342); 
+    margin-top: 105px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;700&display=swap');
+
+.warnbox {
+    background-color: rgba(255, 26, 26, 0.767); 
+    color: rgb(43, 14, 14); 
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+
